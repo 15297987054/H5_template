@@ -1,0 +1,23 @@
+// 字体颜色 @size为px 结果为rem
+.font-c(@size, @color){
+  font-size: @size/100rem;
+  color: @color;
+}
+
+.align-items(@dir: center){
+  align-items: @dir;
+}
+
+.justify-content(@dir: center){
+  justify-content: @dir;
+}
+
+.flex(@align: center, @vAlign: center){
+  display: flex;
+  align-items: @vAlign;
+  justify-content: @align;
+}
+
+.flex-num(@num){
+  flex: @num;
+}

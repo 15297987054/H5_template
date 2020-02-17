@@ -1,0 +1,129 @@
+.ah-button-large {
+  width: 100%;
+  height: .9rem;;
+  line-height: .9rem;
+  font-size: .36rem;
+  background-color: @second-color;
+  border: 1px solid @second-color;
+  border-radius: .46rem;
+  color: @fill-base;
+}
+
+.ah-button {
+  height: 0.66rem;
+  line-height: 0.66rem;
+  font-size: 0.3rem;
+  border-radius: .5rem;
+}
+.ah-button-default {
+  color: #999999;
+  background-color: #FFFFFF;
+  border: 1px solid #ffffff;
+  padding: 0 .3rem;
+}
+.ah-button-primary {
+  color: #FFFFFF;
+  background-color: @second-color;
+  border: 1px solid @second-color;
+  padding: 0 .6rem;
+}
+
+// flex布局
+.flex-normal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-n {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-wrap {
+  .flex-n;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.flex-v {
+  .flex-n;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+// 不换行
+.text-ellipsis{
+  overflow: hidden;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+// 多行溢出省略号
+.text-more-ellipsis(@lineNum) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: @lineNum;
+  -webkit-box-orient: vertical;
+}
+
+// 底部按钮
+.bottom-btn{
+  position: fixed;
+  bottom: 0;
+  z-index: 88;
+  width: 100%;
+  line-height: .88rem;
+  text-align: center;
+  .font-c(36,#fff);
+  background-color: @active-color;
+}
+
+// 边框阴影
+.box-shade{
+  box-shadow: 0px 3px 17px -6px rgba(0,0,0,0.15);
+  border-radius: 13px;
+}
+
+.no-data{
+  .no-data-icon{
+    display: block;
+    margin: .4rem auto;
+    width: 3.38rem;
+    height: 2.4rem;
+    background: url(../assets/images/pic_wurenwu.png) no-repeat;
+    background-size: 100% auto;
+  }
+  p{
+    text-align: center;
+    .font-c(24,@color-text-caption);
+  }
+}
+
+.bottom-bar {
+  box-sizing: border-box;
+  padding: 0 .3rem;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  line-height: 1rem;
+  background-color: #ffffff;
+  text-align: right;
+}
